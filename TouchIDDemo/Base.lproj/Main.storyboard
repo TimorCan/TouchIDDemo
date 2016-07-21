@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z36-9n-Yc6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Touch-01-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zy3-nT-dyV">
+                                <rect key="frame" x="118" y="269" width="84" height="30"/>
+                                <state key="normal" title="验证touchID"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoc-qE-4Pz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证信息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kst-6C-pSO">
+                                <rect key="frame" x="60" y="201" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kst-6C-pSO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="27x-eQ-PJ1"/>
+                            <constraint firstItem="Zy3-nT-dyV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S2p-FB-pAt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kst-6C-pSO" secondAttribute="trailing" constant="57" id="mWz-Na-ikb"/>
+                            <constraint firstItem="Zy3-nT-dyV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ptm-Oe-5vI"/>
+                            <constraint firstItem="Zy3-nT-dyV" firstAttribute="top" secondItem="Kst-6C-pSO" secondAttribute="bottom" constant="47" id="x0z-wq-eZn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Touch-01" id="pEi-P6-Z8P"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="Kst-6C-pSO" id="rci-db-V1g"/>
+                        <outlet property="touchBtn" destination="Zy3-nT-dyV" id="cKk-O0-Mtl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="406"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SsX-gv-he0">
+            <objects>
+                <viewController storyboardIdentifier="EKViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o6i-HC-qlb" customClass="EKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Exy-04-ER1"/>
+                        <viewControllerLayoutGuide type="bottom" id="CZN-Kq-sy4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KTS-6m-2Ec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="erk.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tdx-4S-XeZ">
+                                <rect key="frame" x="51" y="187" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tdx-4S-XeZ" secondAttribute="trailing" constant="13" id="FhM-w0-GWj"/>
+                            <constraint firstItem="CZN-Kq-sy4" firstAttribute="top" secondItem="Tdx-4S-XeZ" secondAttribute="bottom" constant="253" id="Hra-Ay-PLS"/>
+                            <constraint firstItem="Tdx-4S-XeZ" firstAttribute="top" secondItem="Exy-04-ER1" secondAttribute="bottom" constant="167" id="Qmz-na-lhs"/>
+                            <constraint firstItem="Tdx-4S-XeZ" firstAttribute="leading" secondItem="KTS-6m-2Ec" secondAttribute="leadingMargin" constant="35" id="lLV-0p-DeA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kt8-rR-mY4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gkm-AY-meG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jy2-lh-kLz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z36-9n-Yc6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wkZ-be-rVH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kgd-SA-LaV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5NT-UD-IKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="erk.jpg" width="580" height="329"/>
+    </resources>
+</document>
