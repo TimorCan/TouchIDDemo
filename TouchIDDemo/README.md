@@ -46,3 +46,12 @@ typedef NS_ENUM(NSInteger, LAError)
 >>LAErrorAppCancel和LAErrorSystemCancel相似，都是当前软件被挂起取消了授权，但是前者是用户不能控制的挂起，例如突然来了电话，电话应用进入前台，APP被挂起。后者是用户自己切到了别的应用，例如按home键挂起。
   
 >> LAErrorInvalidContext很好理解，就是授权过程中,LAContext对象被释放掉了，造成的授权失败。
+
+
+
+[参考链接1](https://segmentfault.com/a/1190000002516465)
+[参考链接2](http://www.jianshu.com/p/9b0aa6b9c689)
+```
+灿哥2016-07-21
+
+```
